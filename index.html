@@ -51,12 +51,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl_build.loader.js";
+      var loaderUrl = buildUrl + "/tic-tac-toe-unity-game.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/webgl_build.data",
-        frameworkUrl: buildUrl + "/webgl_build.framework.js",
-        codeUrl: buildUrl + "/webgl_build.wasm",
+        dataUrl: buildUrl + "/tic-tac-toe-unity-game.data",
+        frameworkUrl: buildUrl + "/tic-tac-toe-unity-game.framework.js",
+        codeUrl: buildUrl + "/tic-tac-toe-unity-game.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Ehsan Ul Haque",
         productName: "Tic Tac Toe",
@@ -110,7 +110,6 @@
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
-
               }).catch((message) => {
                 alert(message);
               });
